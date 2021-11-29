@@ -14,3 +14,40 @@ function RenderDirectoryItem({acai}) {
         </Card>
     );
 }
+
+function Directory(props) {
+
+    const directory = props.campsites.map(acai => {
+        return (
+            <div key={acai.id} className="col-md-5 m-1">
+                <RenderDirectoryItem acai={acai} />
+            </div>
+        );
+    });
+
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <Breadcrumb>
+                        <BreadcrumbItem>
+                            <Link to="/home">
+                                Home
+                            </Link>
+                        </BreadcrumbItem>
+                        <BreadcrumbItem active>
+                            Directory
+                        </BreadcrumbItem>
+                    </Breadcrumb>
+                    <h2>Directory</h2>
+                    <hr />
+                </div>
+            </div>
+            <div className="row">
+                {directory}
+            </div>
+        </div>
+    );
+}
+
+export default Directory;
