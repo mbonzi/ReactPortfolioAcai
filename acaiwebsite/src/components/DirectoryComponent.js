@@ -17,7 +17,7 @@ function RenderDirectoryItem({acai}) {
 
 function Directory(props) {
 
-    const directory = props.campsites.map(acai => {
+    const directory = props.acaiBowl.map(acai => {
         return (
             <div key={acai.id} className="col-md-5 m-1">
                 <RenderDirectoryItem acai={acai} />

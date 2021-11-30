@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Directory from './DirectoryComponent';
+import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import Home from './HomeComponent';
@@ -11,16 +12,16 @@ import { connect } from 'react-redux';
 const mapStateToProps = state => {
     return {
         acaiBowl: state.acaiBowl,
-        /*comments: state.comments,
+        comments: state.comments,
         partners: state.partners,
-        promotions: state.promotions*/
+        promotions: state.promotions
     };
 };
 
 class Main extends Component {
 
-    onacaiBowlelect(acaiId) {
-        this.setprops({selectedacai: acaiId});
+    onacaiSelect(acaiId) {
+        this.setprops({selectedAcai: acaiId});
     }
 
     render() {
@@ -35,9 +36,9 @@ class Main extends Component {
             );
         };
 
-        const acaiWithId = ({match}) => {
+        const AcaiWithId = ({match}) => {
             return (
-                <acaiInfo 
+                <Menu 
                     acai={this.props.acaiBowl.filter(acai => acai.id === +match.params.acaiId)[0]}
                     comments={this.props.comments.filter(comment => comment.acaiId === +match.params.acaiId)}
                 />
@@ -50,7 +51,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/directory' render={() => <Directory acaiBowl={this.props.acaiBowl} />} />
-                    <Route path='/directory/:acaiId' component={acaiWithId} />
+                    <Route path='/directory/:acaiId' component={AcaiWithId} />
                     <Route exact path='/contactus' component={Contact} />
 
                     <Route path='/aboutus' render={() => <About partners={this.props.partners} />} />

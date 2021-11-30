@@ -132,7 +132,7 @@ class CommentForm extends React.Component {
   }
 }
 
-function Renderacai({ acai }) {
+function RenderAcai({ acai }) {
   return (
     <div className="col-md-5 m-1">
       <Card>
@@ -167,7 +167,7 @@ function RenderComments({ comments }) {
   return <div />;
 }
 
-function Menu(props) {
+function MenuInfo(props) {
   if (props.acai) {
     return (
       <div className="container">
@@ -184,7 +184,7 @@ function Menu(props) {
           </div>
         </div>
         <div className="row">
-          <Renderacai acai={props.acai} />
+          <RenderAcai acai={props.acai} />
           <RenderComments comments={props.comments} />
         </div>
       </div>
@@ -193,4 +193,4 @@ function Menu(props) {
   return <div />;
 }
 
-export default Menu;
+export default MenuInfo;
