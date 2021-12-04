@@ -14,8 +14,6 @@ import {
 import { Control, LocalForm, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 
-const minLength = (len) => (val) => val && val.length >= len;
-const maxLength = (len) => (val) => !val || val.length <= len;
 
 class CommentForm extends React.Component {
   constructor(props) {
@@ -36,70 +34,41 @@ class CommentForm extends React.Component {
   }
 
   handleSubmit(values) {
-    alert("Current state is: " + JSON.stringify(values));
+    alert("Added to cart: " + JSON.stringify(values));
   }
 
   render() {
     return (
       <React.Fragment>
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-          <ModalHeader toggle={this.toggleModal}>Submit Comment:</ModalHeader>
+          <ModalHeader toggle={this.toggleModal}>Order Now:</ModalHeader>
           <ModalBody>
             <LocalForm onSubmit={this.handleSubmit}>
               <div className="form-group">
-                <label htmlFor="rating">Rating</label>
+                <label htmlFor="quantity">Quantity</label>
                 <Control.select
-                  id="rating"
-                  name="rating"
-                  model=".rating"
+                  id="quantity"
+                  name="quantity"
+                  model=".quantity"
                   className="form-control"
                 >
-                  <option name="rating" disabled selected value> Select... </option>
-                  <option name="rating">1</option>
-                  <option name="rating">2</option>
-                  <option name="rating">3</option>
-                  <option name="rating">4</option>
-                  <option name="rating">5</option>
+                  <option name="quantity" disabled selected value> Select... </option>
+                  <option name="quantity">1</option>
+                  <option name="quantity">2</option>
+                  <option name="quantity">3</option>
+                  <option name="quantity">4</option>
+                  <option name="quantity">5</option>
                 </Control.select>
               </div>
 
               <div className="form-group">
-                <label htmlFor="author">Author</label>
-                <Control.text
-                  id="author"
-                  name="author"
-                  model=".author"
-                  placeholder="Your Name"
-                  className="form-control"
-                  validators={{
-                    minLength: minLength(2),
-                    maxLength: maxLength(15),
-                  }} 
-                >
-                </Control.text>
-
-                <Errors
-                  className="text-danger"
-                  show="touched"
-                  model=".author"
-                  messages={{
-                    minLength: "Must be at least 2 characters",
-                    maxLength: "Must be 15 characters or less",
-                  }}
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="comments">Comment</label>
+                <label htmlFor="comments">Special Instructions</label>
                 <Control.textarea
                   id="text"
                   name="text"
                   model=".text"
                   className="form-control"
                   placeholder="Comments"
-                  validators={{
-                    maxLength: maxLength(250),
-                  }}
                 >
                 </Control.textarea>
 
@@ -107,9 +76,6 @@ class CommentForm extends React.Component {
                   className="text-danger"
                   show="touched"
                   model=".text"
-                  messages={{
-                    maxLength: "Must be 250 characters or less",
-                  }}
                 />
               </div>
 
@@ -123,8 +89,8 @@ class CommentForm extends React.Component {
         </Modal>
 
         <Button outline color="secondary" size="sm" onClick={this.toggleModal}>
-          <i className="fa fa-light fa-pencil fa-lg" />
-          Submit Comment
+          <i className="fa fa-light fa-cart-arrow-down fa-lg" />
+           Add to Cart
         </Button>
         {""}
       </React.Fragment>
@@ -149,15 +115,10 @@ function RenderComments({ comments }) {
   if (comments) {
     return (
       <div className="col-md-5 m-1">
-        <h4>Comments:</h4>
+        <h4>~ Ingredients ~</h4>
         {comments.map((comments) => (
           <div key={comments.id}>
-            {comments.text},{comments.author} -
-            {new Intl.DateTimeFormat("en-US", {
-              year: "numeric",
-              month: "short",
-              day: "2-digit",
-            }).format(new Date(Date.parse(comments.date)))}
+            {comments.text}
           </div>
         ))}
         <CommentForm />

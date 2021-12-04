@@ -52,7 +52,7 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar dark sticky="top" expand="md">
+                <Navbar light sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
@@ -65,17 +65,18 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/directory">
-                                        <i className="fa fa-list fa-lg" /> Menu
+                                        <i className="fa fa-spoon fa-lg" /> Acai Bowls
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/aboutus">
-                                        <i className="fa fa-info fa-lg" /> About
+                                        <i className="fa fa-apple fa-lg" /> Juices/Smoothies
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contactus">
-                                        <i className="fa fa-address-card fa-lg" /> Contact Us
+                                        <i className="fa fa-address-card fa-lg" /> 
+                                        Contact Us
                                     </NavLink>
                                 </NavItem>
                             </Nav>

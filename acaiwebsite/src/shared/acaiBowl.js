@@ -1,34 +1,66 @@
 export const ACAIBOWL = [
     {
         id: 0,
-        name: "React Lake Campground",
-        image: "/assets/images/react-lake.jpg",
-        elevation: 1233,
+        name: "Cali Creamin Bowl",
+        image: "/assets/images/cali-creamin-bowl.jpg",
+        ingredients: "Ingredients: acerola & orange essential oil which creates a tangy and refreshing base. Toppings: granola, juicy nectarine slices, strawberries, and coconut flakes.",
         featured: false,
-        description: "Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers."
+        description: "Small: $5.00  Large: $7.00  "
     },
     {
         id: 1,
-        name:"Chrome River Campground ",
-        image: "/assets/images/chrome-river.jpg",
-        elevation: 877,
+        name:"Spooners Cove Bowl",
+        image: "/assets/images/spooners-bowl.jpg",
+        ingredients: "Toppings: Hemp granola, banana, mango, kiwi, coconut flakes. Ingredients: Pineapple, banana, blue spirulina, lime zest, aloe vera, coconut water.", 
         featured: false,
-        description: "Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River."
+        description: "Small: $5.00  Large: $7.00  "
     },
     {
         id: 2,
-        name:"Breadcrumb Trail Campground",
-        image: "/assets/images/breadcrumb-trail.jpg",
-        elevation: 2901,
+        name:"Pirates Cove Bowl",
+        image: "/assets/images/pirates-bowl.jpg",
+        ingredients: "Toppings: Hemp, granola, banana, strawberry, chia seeds.  Ingredients: Acai, pitaya, pineapple, banana, papaya, tangerine juice.", 
         featured: false,
-        description: "Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground."
+        description: "Small: $5.00  Large: $7.00  "
     },
     {
         id: 3,
-        name:"Redux Woods Campground",
-        image: "/assets/images/redux-woods.jpg",
-        elevation: 42,
+        name:"Watermelon Fresca Bowl",
+        image: "/assets/images/watermelon-bowl.jpg",
+        ingredients: "Toppings: Granola, fresh watermelon, kiwi, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.", 
         featured: true,
-        description: "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
+        description: "Small: $5.00  Large: $7.00"
+    },
+    {
+        id: 4,
+        name:"Blueberry Twist Bowl",
+        image: "/assets/images/blueberry-bowl.jpg",
+        ingredients: "Toppings: Hemp, granola, banana, blueberries, flax seed. Ingredients: Blueberry, banana, cinnamon, lemon zest, almond milk.", 
+        featured: true,
+        description: "Small: $5.00  Large: $7.00"
+    },
+    {
+        id: 5,
+        name:"Seasonal Peppermint Bowl",
+        image: "/assets/images/peppermint-bowl.jpg",
+        ingredients: "Toppings: Banana, dark chocolate curls, fresh mint, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.", 
+        featured: true,
+        description: "Small: $5.00  Large: $7.00"
+    },
+    {
+        id: 6,
+        name:"Peach Street Bowl",
+        image: "/assets/images/peach-bowl.jpg",
+        ingredients: "Toppings: Strawberries, chia seeds, fresh cut peaches.  Ingredients: Acai, pitaya, pineapple, banana, papaya, tangerine juice.", 
+        featured: true,
+        description: "Small: $5.00  Large: $7.00"
+    },
+    {
+        id: 7,
+        name:"Seasonal Pumpkin Spice Bowl",
+        image: "/assets/images/pumpkin-bowl.jpg",
+        ingredients: "Toppings: Hemp granola, banana, black berries, spiced pumkin seeds.  Ingredients: Acai, pumpkin puree, pumpkin spice, banana, papaya, almond milk.", 
+        featured: true,
+        description: "Small: $5.00  Large: $7.00"
     }
 ];

@@ -1,163 +1,142 @@
-export const COMMENTS = 
-[
+export const COMMENTS = [
     {
         id: 0,
-        campsiteId: 0,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        acaiId: 0,
+        quantity: 0, 
+        text: "Ingredients: Acerola & orange essential oil which creates a tangy and refreshing base.Toppings: granola, juicy nectarine slices, strawberries, and coconut flakes. ",
+        author: " text"
     },
     {
         id: 1,
-        campsiteId: 0,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        acaiId: 1,
+        quantity: 0, 
+        text: "Toppings: Hemp granola, banana, mango, kiwi, coconut flakes. Ingredients: Pineapple, banana, blue spirulina, lime zest, aloe vera, coconut water.",
+        author: " "
     },
     {
         id: 2,
-        campsiteId: 0,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        acaiId: 2,
+        quantity: 0, 
+        text: "Toppings: Hemp, granola, banana, strawberry, chia seeds.  Ingredients: Acai, pitaya, pineapple, banana, papaya, tangerine juice.",
+        author: " "
     },
     {
         id: 3,
-        campsiteId: 0,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        acaiId: 3,
+        quantity: 0, 
+        text: "Toppings: Granola, fresh watermelon, kiwi, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.",
+        author: " "
     },
     {
         id: 4,
-        campsiteId: 0,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        acaiId: 4,
+        quantity: 0, 
+        text: "Toppings: Hemp, granola, banana, blueberries, flax seed. Ingredients: Blueberry, banana, cinnamon, lemon zest, almond milk.",
+        author: " "
     },
     {
-        id: 5,
-        campsiteId: 1,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        id: 0,
+        acaiId: 5,
+        quantity: 0, 
+        text: "Toppings: Banana, dark chocolate curls, fresh mint, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.",
+        author: " "
     },
     {
         id: 6,
-        campsiteId: 1,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        acaiId: 6,
+        quantity: 0, 
+        text: "Toppings: Strawberries, chia seeds, fresh cut peaches.  Ingredients: Acai, pitaya, pineapple, banana, papaya, tangerine juice.",
+        author: " "
     },
     {
         id: 7,
-        campsiteId: 1,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        acaiId: 7,
+        quantity: 0, 
+        text: "Toppings: Hemp granola, banana, black berries, spiced pumkin seeds.  Ingredients: Acai, pumpkin puree, pumpkin spice, banana, papaya, almond milk.",
+        author: " "
     },
     {
         id: 8,
-        campsiteId: 1,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        acaiId: 8,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 9,
-        campsiteId: 1,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        acaiId: 0,
+        quantity: 0, 
+        text: " ",
+        author: ""
     },
     {
         id: 10,
-        campsiteId: 2,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        acaiId: 1,
+        quantity: 0, 
+        text: "",
+        author: " "
     },
     {
         id: 11,
-        campsiteId: 2,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        acaiId: 2,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 12,
-        campsiteId: 2,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        acaiId: 3,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 13,
-        campsiteId: 2,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        acaiId: 4,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 14,
-        campsiteId: 2,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        acaiId: 0,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
-        id: 15,
-        campsiteId: 3,
-        rating: 5, 
-        text: "A wonderful place to reconnect with nature.",
-        author: "Jordan Runn",
-        date: "2019-08-04T20:11Z"
+        id: 10,
+        acaiId: 6,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 16,
-        campsiteId: 3,
-        rating: 4, 
-        text: "The stars at night were a revelation!",
-        author: "Ann Dabramov",
-        date: "2018-07-23T19:44Z"
+        acaiId: 7,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 17,
-        campsiteId: 3,
-        rating: 5, 
-        text: "What a magnificent view!",
-        author: "Tinus Lorvaldes",
-        date: "2018-10-25T16:30Z"
+        acaiId: 8,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 18,
-        campsiteId: 3,
-        rating: 4, 
-        text: "The campground was beautiful, but the bugs could bite sometimes.",
-        author: "Brennen Ech",
-        date: "2017-06-17T03:33Z"
+        acaiId: 9,
+        quantity: 0, 
+        text: " ",
+        author: " "
     },
     {
         id: 19,
-        campsiteId: 3,
-        rating: 5, 
-        text: "I caught a world-record-breaking trout here on my last visit.",
-        author: "McKenzie Sebastian",
-        date: "2019-02-18T18:12Z"
+        acaiId: 10,
+        quantity: 0, 
+        text: " ",
+        author: " "
     }
 ]
