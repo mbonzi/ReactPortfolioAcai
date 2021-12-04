@@ -13,7 +13,7 @@ const mapStateToProps = state => {
     return {
         acaiBowl: state.acaiBowl,
         comments: state.comments,
-        partners: state.partners,
+        abouts: state.abouts,
         promotions: state.promotions
     };
 };
@@ -31,7 +31,8 @@ class Main extends Component {
                 <Home
                     acai={this.props.acaiBowl.filter(acai => acai.featured)[0]}
                     promotion={this.props.promotions.filter(promotion => promotion.featured)[0]}
-                    partner={this.props.partners.filter(partner => partner.featured)[0]}
+                    about={this.props.abouts.filter(about => about.featured)[0]}
+                    about={this.props.abouts.filter(about => about.featured)[0]}
                 />
             );
         };
@@ -54,7 +55,7 @@ class Main extends Component {
                     <Route path='/directory/:acaiId' component={AcaiWithId} />
                     <Route exact path='/contactus' component={Contact} />
 
-                    <Route path='/aboutus' render={() => <About partners={this.props.partners} />} />
+                    <Route path='/aboutus' render={() => <About abouts={this.props.abouts} />} />
 
                     <Redirect to='/home' />
                 </Switch>

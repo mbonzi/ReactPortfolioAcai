@@ -1,5 +1,7 @@
+import { react } from '@babel/types';
 import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+
 
 function RenderCard({item}) {
     return (
@@ -24,11 +26,12 @@ function Home(props) {
                     <RenderCard item={props.promotion} />
                 </div>
                 <div className="col-md m-1">
-                    <RenderCard item={props.partner} />
+                    <RenderCard item={props.about} />
                 </div>
             </div>
         </div>
     );
 }
+
 
 export default Home;   

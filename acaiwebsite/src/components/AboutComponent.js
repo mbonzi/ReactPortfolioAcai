@@ -3,16 +3,16 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 
-function RenderPartner({partner}) {
-    if(partner) {
+function RenderAbout({about}) {
+    if(about) {
         return(
             <React.Fragment>
-                <Media object src={partner.image} alt={partner.name} width="150" />
+                <Media object src={about.image} alt={about.name} width="150" />
                 <Media body className="ml-5 mb-4">
                         <Media heading>
-                            {partner.name}
+                            {about.name}
                         </Media>
-                        {partner.description}
+                        {about.description}
                 </Media>
             </React.Fragment> 
         );
@@ -24,10 +24,10 @@ function RenderPartner({partner}) {
 
 function About(props) {
 
-    const partners = props.partners.map(partner => {
+    const abouts = props.abouts.map(about => {
         return (
-            <Media tag='li' key={partner.id}>
-                <RenderPartner partner={partner}/>
+            <Media tag='li' key={about.id}>
+                <RenderAbout about={about}/>
             </Media>
         );
     }); 
@@ -46,45 +46,66 @@ function About(props) {
                              Us
                         </BreadcrumbItem>
                     </Breadcrumb>
-                    <h2>About Us</h2>
+                    <h2>Fresh Juice and Smoothies</h2>
+                    <p>Made fresh to order.</p>
                     <hr />
                 </div>
             </div>
 
             <div className="row row-content">
-                <div className="col-sm-6">
-                    <h3>Title Text</h3>
-                    <p>Text.</p>
-                </div>
-
-                <div className="col-sm-6">
+                <div className="col-sm-10">
                     <Card>
-                        <CardHeader className="bg-primary text-white"><h3>TITLE</h3></CardHeader>
+                        <CardHeader className="bg-success text-white">
+                            <h3>Cold Pressed Juice </h3>
+                        </CardHeader>
                         <CardBody>
                             <dl className="row">
-                                <dt className="col-6">1</dt>
-                                <dd className="col-6">1A</dd>
-                                <dt className="col-6">2</dt>
-                                <dd className="col-6">2B</dd>
-                                <dt className="col-6">3</dt>
-                                <dd className="col-6">3B</dd>
-                                <dt className="col-6">4</dt>
-                                <dd className="col-6">4B</dd>
+                                <dt className="col-10">Beet Juice</dt>
+                                <dd className="col-10">Beets | Apple | Celery | Cilantro | Lime</dd>
+                                <dt className="col-10">Celery Juice</dt>
+                                <dd className="col-10">Kale | Spinach | Cucumber | Celery | Green Apple | Ginger | Lemon</dd>
+                                <dt className="col-10">Citrus Detox Juice</dt>
+                                <dd className="col-10"> Orange | Lemon | Pineapple | Turmeric | Cayenne Pepper </dd>
+                                <dt className="col-10">Ginger Bliss Juice</dt>
+                                <dd className="col-10"> Ginger | Red Apple | Green Apple | Lemon </dd>
+                                <dt className="col-10">The Green Juice</dt>
+                                <dd className="col-10">Kale | Spinach | Cucumber | Celery | Parsley | Lemon</dd>
+                                <dt className="col-10">Watermelon Refresher Juice</dt>
+                                <dd className="col-10">Watermelon | Mint | Lime | Camu Camu </dd>
+                                <dt className="col-10">24 Carrot Juice</dt>
+                                <dd className="col-10"> Carrot | Orange | Pineapple | Ginger | Turmeric | Lime | Cinnamon </dd>
+                                <dt className="col-10">Charcoal Lavendar Lemonade</dt>
+                                <dd className="col-10"> Activated Charcoal | Lavender | Lemon | Maple Syrup | Filtered H20 </dd>
+                                <dt className="col-10">Sweet Greens</dt>
+                                <dd className="col-10"> Celery | Pineapple | Pear | Cucumber | Kale | Spinach | Lime </dd>
                             </dl>
                         </CardBody>
                     </Card>
-                </div>
-
-                <div className="col">
-                    <Card className="bg-light mt-3">
+                    <Card>
+                        <CardHeader className="bg-success text-white">
+                            <h3>Freshly Prepared Smoothies </h3>
+                        </CardHeader>
                         <CardBody>
-                            <blockquote className="blockquote">
-                                <p className="mb-0">Text.</p>
-                                <footer className="blockquote-footer">Author Name,{' '}
-                                    <cite title="Source Title">"title" -
-                                    Book, Year</cite>
-                                </footer>
-                            </blockquote>
+                            <dl className="row">
+                                <dt className="col-10">Acai Berry Smoothie</dt>
+                                <dd className="col-10"></dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10"> </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10">  </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10">  </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10"> </dd>
+                                <dt className="col-10"> e</dt>
+                                <dd className="col-10"> </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10">  </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10">  </dd>
+                                <dt className="col-10"> </dt>
+                                <dd className="col-10">  </dd>
+                            </dl>
                         </CardBody>
                     </Card>
                 </div>
@@ -92,11 +113,11 @@ function About(props) {
 
             <div className="row row-content">
                 <div className="col-12">
-                    <h3>TITLE 3</h3>
+                    <h3>About Us</h3>
                 </div>
                 <div className="col mt-4">
                     <Media list>
-                        {partners}
+                        {abouts}
                     </Media>
                 </div>
             </div>
