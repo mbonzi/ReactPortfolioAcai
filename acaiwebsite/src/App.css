@@ -1,5 +1,9 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-image: url('/src/shared/coconut.jpg');
+  background-position: center;
+  background-size: cover; 
+  opacity: 1;
 }
 
 h1, h2, h3, .card-body>.card-title {

@@ -97,7 +97,7 @@ function About(props) {
                                 <dd className="col-10">  </dd>
                                 <dt className="col-10"> </dt>
                                 <dd className="col-10"> </dd>
-                                <dt className="col-10"> e</dt>
+                                <dt className="col-10"> </dt>
                                 <dd className="col-10"> </dd>
                                 <dt className="col-10"> </dt>
                                 <dd className="col-10">  </dd>

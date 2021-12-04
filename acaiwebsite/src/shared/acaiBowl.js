@@ -29,7 +29,7 @@ export const ACAIBOWL = [
         image: "/assets/images/watermelon-bowl.jpg",
         ingredients: "Toppings: Granola, fresh watermelon, kiwi, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.", 
         featured: true,
-        description: "Small: $5.00  Large: $7.00"
+        description: "Featured Bowl of the Month! Small: $5.00  Large: $7.00"
     },
     {
         id: 4,
