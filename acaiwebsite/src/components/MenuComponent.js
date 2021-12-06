@@ -15,7 +15,7 @@ import { Control, LocalForm, Errors } from "react-redux-form";
 import { Link } from "react-router-dom";
 
 
-class CommentForm extends React.Component {
+class IngredientForm extends React.Component {
   constructor(props) {
     super(props);
 
@@ -62,13 +62,13 @@ class CommentForm extends React.Component {
               </div>
 
               <div className="form-group">
-                <label htmlFor="comments">Special Instructions</label>
+                <label htmlFor="ingredients">Special Instructions</label>
                 <Control.textarea
                   id="text"
                   name="text"
                   model=".text"
                   className="form-control"
-                  placeholder="Comments"
+                  placeholder="ingredients"
                 >
                 </Control.textarea>
 
@@ -111,17 +111,17 @@ function RenderAcai({ acai }) {
   );
 }
 
-function RenderComments({ comments }) {
-  if (comments) {
+function RenderIngredients({ ingredients }) {
+  if (ingredients) {
     return (
       <div className="col-md-5 m-1">
         <h4>~ Ingredients ~</h4>
-        {comments.map((comments) => (
-          <div key={comments.id}>
-            {comments.text}
+        {ingredients.map((ingredients) => (
+          <div key={ingredients.id}>
+            {ingredients.text}
           </div>
         ))}
-        <CommentForm />
+        <IngredientForm />
       </div>
     );
   }
@@ -146,7 +146,7 @@ function MenuInfo(props) {
         </div>
         <div className="row">
           <RenderAcai acai={props.acai} />
-          <RenderComments comments={props.comments} />
+          <RenderIngredients ingredients={props.ingredients} />
         </div>
       </div>
     );

@@ -1,11 +1,11 @@
 import { ACAIBOWL } from '../shared/acaiBowl';
-import { COMMENTS } from '../shared/comments';
+import { INGREDIENTS } from '../shared/ingredients';
 import { ABOUTS } from '../shared/abouts';
 import { PROMOTIONS } from '../shared/promotions';
 
 export const initialState = {
     acaiBowl: ACAIBOWL,
-    comments: COMMENTS,
+    ingredients: INGREDIENTS,
     abouts: ABOUTS,
     promotions: PROMOTIONS
 };

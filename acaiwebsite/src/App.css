@@ -50,3 +50,12 @@ h2 {
 .navbar-light {
   background-color: rgb(247, 247, 119);
 }
+
+.featured {
+  color: darkgreen;
+  text-align: center;
+}
+
+.cardText {
+  text-align: center;
+}

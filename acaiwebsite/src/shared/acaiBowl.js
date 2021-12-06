@@ -1,9 +1,11 @@
+import React from 'react';
+
 export const ACAIBOWL = [
     {
         id: 0,
         name: "Cali Creamin Bowl",
         image: "/assets/images/cali-creamin-bowl.jpg",
-        ingredients: "Ingredients: acerola & orange essential oil which creates a tangy and refreshing base. Toppings: granola, juicy nectarine slices, strawberries, and coconut flakes.",
+        ingredients:  <div><div>Ingredients: acerola &amp; orange essential oil which creates a tangy and refreshing base.</div><div>Toppings: granola, juicy nectarine slices, strawberries, and coconut flakes.</div></div>,
         featured: false,
         description: "Small: $5.00  Large: $7.00  "
     },
@@ -29,7 +31,12 @@ export const ACAIBOWL = [
         image: "/assets/images/watermelon-bowl.jpg",
         ingredients: "Toppings: Granola, fresh watermelon, kiwi, coconut. Ingredients: Fresh pressed cucumber juice, watermelon, mint, acai, pineapple, banana.", 
         featured: true,
-        description: "Featured Bowl of the Month! Small: $5.00  Large: $7.00"
+        description: 
+            <>
+                <p className="featured"> Featured Bowl of the Month! </p> 
+                <p>Small: $5.00</p>  
+                <p>Large: $7.00</p>
+            </>
     },
     {
         id: 4,

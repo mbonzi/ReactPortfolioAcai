@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 const mapStateToProps = state => {
     return {
         acaiBowl: state.acaiBowl,
-        comments: state.comments,
+        ingredients: state.ingredients,
         abouts: state.abouts,
         promotions: state.promotions
     };
@@ -41,7 +41,7 @@ class Main extends Component {
             return (
                 <Menu 
                     acai={this.props.acaiBowl.filter(acai => acai.id === +match.params.acaiId)[0]}
-                    comments={this.props.comments.filter(comment => comment.acaiId === +match.params.acaiId)}
+                    ingredients={this.props.ingredients.filter(ingredient => ingredient.acaiId === +match.params.acaiId)}
                 />
             );
         };    
