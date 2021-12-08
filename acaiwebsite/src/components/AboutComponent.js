@@ -88,23 +88,23 @@ function About(props) {
                         <CardBody>
                             <dl className="row">
                                 <dt className="col-10">Acai Berry Smoothie</dt>
-                                <dd className="col-10"></dd>
+                                <dd className="col-10">Acai Berries | Banana | Strawberries | Raspberries | Hemp Seeds | ALmond Milk</dd>
                                 <dt className="col-10">Strawberry Banana Smoothie</dt>
-                                <dd className="col-10"> </dd>
+                                <dd className="col-10">Strawberries | Banana | Orange Juice | Raspberries</dd>
                                 <dt className="col-10">Peanut Butter Protein Smoothie </dt>
-                                <dd className="col-10">  </dd>
+                                <dd className="col-10">Protein Powder | Peanut Butter | Almond Milk | Oats | Banana </dd>
                                 <dt className="col-10">Spaghetti Smoothie</dt>
-                                <dd className="col-10">  </dd>
+                                <dd className="col-10">Marinara Sauce | Meatballs | Angel Hair Pasta</dd>
                                 <dt className="col-10">Kale and Papaya Smoothie</dt>
-                                <dd className="col-10"> </dd>
+                                <dd className="col-10">Kale | Papaya | Mango | Pineapple | Spinach</dd>
                                 <dt className="col-10">Best smoothie ever with lots of vegetables</dt>
-                                <dd className="col-10"> </dd>
+                                <dd className="col-10">Mystery Ingredients</dd>
                                 <dt className="col-10">Berry Bundle Smoothie</dt>
-                                <dd className="col-10">  </dd>
+                                <dd className="col-10">Strawberries | Blueberries | Acai Berries | Raspberries | Say Milk</dd>
                                 <dt className="col-10">I Love Pineapple Smoothie</dt>
-                                <dd className="col-10">  </dd>
+                                <dd className="col-10">Pineapple | Mango | Pineapple Juice | Coconut </dd>
                                 <dt className="col-10">Mango Madness Smoothie</dt>
-                                <dd className="col-10">  </dd>
+                                <dd className="col-10">Mango | Orange Juice | Banana | Honey | Greek Yogurt | More Mango</dd>
                             </dl>
                         </CardBody>
                     </Card>
