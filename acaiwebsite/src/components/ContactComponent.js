@@ -3,6 +3,8 @@ import { Breadcrumb, BreadcrumbItem,
     Button, Label, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm } from 'react-redux-form';
+import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+
 
 class Contact extends Component {
 
@@ -48,23 +50,54 @@ class Contact extends Component {
                 </div>
 
                 <div className="row row-content align-items-center">
-                    <div className="col-sm-4">
-                        <h5>Our Address</h5>
-                        <address>
-                            Paso Robles Location<br />
-                            811 13th Street, <br />
-                            Paso Robles, CA 93446 <br />
-                            Hours:  8:00am - 5:00pm
-                        </address>
-                        <address>
-                            SLO Location<br />
-                            973 E Foothill Blvd, Ste 107, <br />
-                            San Luis Obispo, CA 93405 <br />
-                            Hours:  9:00am - 4:00pm
-                        </address>
+                    <div className="col-xs-10 col-sm-5 m-2">
+                        <Card className="cardText">
+                            <CardBody>
+                                <CardTitle>
+                                    Our Paso Robles Address
+                                </CardTitle>
+                                <CardText>
+                                    Paso Robles Location
+                                    <br />
+                                    811 13th Street, 
+                                    <br />
+                                    Paso Robles, CA 93446 
+                                    <br />
+                                    Hours:  8:00am - 5:00pm
+                                    <br />
+                                    <a role="button" className="btn btn-link" href="tel:+18053692119">
+                                        <i className="fa fa-phone" /> 
+                                        1-805-369-2119
+                                    </a>
+                                    <br />
+                                </CardText>
+                            </CardBody>
+                        </Card>
                     </div>
-                    <div className="col">
-                        <a role="button" className="btn btn-link" href="tel:+18053692119"><i className="fa fa-phone" /> 1-805-369-2119</a><br />
+
+                    <div className="col-xs-10 col-sm-5 m-2">
+                        <Card className="cardText">
+                            <CardBody>
+                                <CardTitle>
+                                    Our San Luis Obispo Address
+                                </CardTitle>
+                                <CardText>
+                                    SLO Location
+                                    <br />
+                                    973 E Foothill Blvd, Ste 107, 
+                                    <br />
+                                    San Luis Obispo, CA 93405 
+                                    <br />
+                                    Hours:  9:00am - 4:00pm
+                                    <br />
+                                    <a role="button" className="btn btn-link" href="tel:+18054394033">
+                                        <i className="fa fa-phone" /> 
+                                        1-805-439-4033
+                                    </a>
+                                    <br />
+                                </CardText>
+                            </CardBody>
+                        </Card>
                     </div>
                 </div>
 

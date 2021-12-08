@@ -89,39 +89,27 @@ function About(props) {
                             <dl className="row">
                                 <dt className="col-10">Acai Berry Smoothie</dt>
                                 <dd className="col-10"></dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Strawberry Banana Smoothie</dt>
                                 <dd className="col-10"> </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Peanut Butter Protein Smoothie </dt>
                                 <dd className="col-10">  </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Spaghetti Smoothie</dt>
                                 <dd className="col-10">  </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Kale and Papaya Smoothie</dt>
                                 <dd className="col-10"> </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Best smoothie ever with lots of vegetables</dt>
                                 <dd className="col-10"> </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Berry Bundle Smoothie</dt>
                                 <dd className="col-10">  </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">I Love Pineapple Smoothie</dt>
                                 <dd className="col-10">  </dd>
-                                <dt className="col-10"> </dt>
+                                <dt className="col-10">Mango Madness Smoothie</dt>
                                 <dd className="col-10">  </dd>
                             </dl>
                         </CardBody>
                     </Card>
                 </div>
             </div>
-
-            <div className="row row-content">
-                <div className="col-12">
-                    <h3>About Us</h3>
-                </div>
-                <div className="col mt-4">
-                    <Media list>
-                        {abouts}
-                    </Media>
-                </div>
-            </div>
-
         </div>
     );
 }

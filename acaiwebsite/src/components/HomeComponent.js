@@ -24,9 +24,6 @@ function Home(props) {
                 <div className="col-md m-2">
                     <RenderCard  item={props.promotion} />
                 </div>
-                <div className="col-md m-2">
-                    <RenderCard  item={props.about} />
-                </div>
             </div>
 
             <div className="row row-content align-items-center">
@@ -34,7 +31,7 @@ function Home(props) {
                     <RenderCard  item={props.homeInfo} />
                 </div>
             </div>
-        </div>
+        </div>        
     );
 }
 
