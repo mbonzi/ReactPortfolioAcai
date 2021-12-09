@@ -14,8 +14,7 @@ const mapStateToProps = state => {
         acaiBowl: state.acaiBowl,
         ingredients: state.ingredients,
         abouts: state.abouts,
-        promotions: state.promotions,
-        homeInfos: state.homeInfos
+        promotions: state.promotions
     };
 };
 
@@ -35,8 +34,6 @@ class Main extends Component {
                     promotion={this.props.promotions.filter(promotion => promotion.featured)[0]}
 
                     about={this.props.abouts.filter(about => about.featured)[0]}
-
-                    homeInfo={this.props.homeInfos.filter(homeInfo => homeInfo.featured)[0]}
                 />
             );
         };

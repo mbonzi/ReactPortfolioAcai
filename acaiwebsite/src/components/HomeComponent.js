@@ -28,7 +28,7 @@ function Home(props) {
 
             <div className="row row-content align-items-center">
                 <div className="col-xs-12 col-md-10 m-4">
-                    <RenderCard  item={props.homeInfo} />
+                    <RenderCard  item={props.about} />
                 </div>
             </div>
         </div>        
